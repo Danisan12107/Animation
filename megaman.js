@@ -8,6 +8,6 @@ class megaman {
     };
 
     draw(ctx) {
-        ctx.drawImage(ASSET_MANAGER.getAsset("./megaman.png"), 0,0);
+        ctx.drawImage(ASSET_MANAGER.getAsset("./megaman.png"),20,20);
     };
 }
