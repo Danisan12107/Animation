@@ -2,7 +2,7 @@ class Animator {
     constructor(spritesheet, xStart, yStart, width, height, frameCount, frameDuration) {
         Object.assign(this, {spritesheet, xStart, yStart, width, height, frameCount, frameDuration});
         this.elapsedTime = 0;
-        this.totalTime = frameCount + frameDuration;
+        this.totalTime = frameCount * frameDuration;
 
     }
 
@@ -14,7 +14,7 @@ class Animator {
             this.xStart + this.width * frame, this.yStart,
             this.width, this.height,
             x, y,
-            this.width * 2, this.height * 2);
+            this.width * 3, this.height * 3);
     };
 
     currentFrame() {

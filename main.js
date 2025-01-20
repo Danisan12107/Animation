@@ -1,12 +1,12 @@
 const gameEngine = new GameEngine();
 
 const ASSET_MANAGER = new AssetManager();
-ASSET_MANAGER.queueDownload("./megaman.png")
+ASSET_MANAGER.queueDownload("./mario.png")
 
 ASSET_MANAGER.downloadAll(() => {
 	const canvas = document.getElementById("gameWorld");
 	const ctx = canvas.getContext("2d");
-	gameEngine.addEntity(new megaman(gameEngine));
+	gameEngine.addEntity(new mario(gameEngine));
 	gameEngine.init(ctx);
 
 	gameEngine.start();
